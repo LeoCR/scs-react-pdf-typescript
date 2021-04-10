@@ -1,7 +1,7 @@
 {
   "name": "scs-pdf-server",
   "version": "1.0.0",
-  "description": "React SSR with Typescript",
+  "description": "React PDF SSR with Typescript",
   "main": "./build/server.js",
   "scripts": {
     "test": "npm test",
@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/LeoCR/react-ssr-typescript.git"
+    "url": "git+ssh://git@github.com/LeoCR/scs-react-pdf-ssr.git"
   },
   "keywords": [
     "react-ssr",
@@ -23,9 +23,9 @@
   "author": "info@leonardoaranibar.co.cr",
   "license": "BSD-2-Clause",
   "bugs": {
-    "url": "https://github.com/LeoCR/react-ssr-typescript/issues"
+    "url": "https://github.com/LeoCR/scs-react-pdf-ssr/issues"
   },
-  "homepage": "https://github.com/LeoCR/react-ssr-typescript#readme",
+  "homepage": "https://github.com/LeoCR/scs-react-pdf-ssr#readme",
   "devDependencies": {
     "@types/express": "^4.17.11",
     "@types/node": "^14.14.37",
