@@ -1,0 +1,48 @@
+{
+  "name": "scs-pdf-server",
+  "version": "1.0.0",
+  "description": "React SSR with Typescript",
+  "main": "./build/server.js",
+  "scripts": {
+    "test": "npm test",
+    "build-dev": "webpack --watch",
+    "build": "webpack",
+    "start-dev": "nodemon build/server.js",
+    "start": "node build/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/LeoCR/react-ssr-typescript.git"
+  },
+  "keywords": [
+    "react-ssr",
+    "typescript",
+    "nodejs",
+    "react"
+  ],
+  "author": "info@leonardoaranibar.co.cr",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/LeoCR/react-ssr-typescript/issues"
+  },
+  "homepage": "https://github.com/LeoCR/react-ssr-typescript#readme",
+  "devDependencies": {
+    "@types/express": "^4.17.11",
+    "@types/node": "^14.14.37",
+    "@types/react": "^17.0.3",
+    "@types/react-dom": "^17.0.3",
+    "@types/react-router-dom": "^5.1.7",
+    "html-loader": "^2.1.2",
+    "html-webpack-plugin": "^5.3.1",
+    "ts-loader": "^8.1.0",
+    "typescript": "^4.2.4",
+    "webpack": "^5.31.2",
+    "webpack-cli": "^4.6.0",
+    "webpack-node-externals": "^2.5.2"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  }
+}
