@@ -1,0 +1,47 @@
+.pdf-container {
+  display: flex;
+  justify-content: center;
+  user-select: none;
+}
+
+.controls {
+  margin: 20px;
+}
+.lg-outer .lg {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  max-height: 100%;
+}
+.controls .lg-next,
+.controls .lg-prev {
+  background-color: rgba(0, 0, 0, 0.45);
+  border-radius: 2px;
+  color: #999;
+  cursor: pointer;
+  display: block;
+  font-size: 22px;
+  margin-top: -10px;
+  padding: 8px 10px 9px;
+  position: absolute;
+  top: 50%;
+  z-index: 1080;
+  border: none !important;
+  outline: none !important;
+}
+.controls .lg-next {
+  left: 95%;
+  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+}
+@media print {
+  .pdf-container {
+    display: none;
+  }
+}

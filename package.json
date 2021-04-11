@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/LeoCR/scs-react-pdf-ssr.git"
+    "url": "git+ssh://git@github.com/LeoCR/scs-react-pdf-typescript.git"
   },
   "keywords": [
     "react-ssr",
@@ -23,26 +23,39 @@
   "author": "info@leonardoaranibar.co.cr",
   "license": "BSD-2-Clause",
   "bugs": {
-    "url": "https://github.com/LeoCR/scs-react-pdf-ssr/issues"
+    "url": "https://github.com/LeoCR/scs-react-pdf-typescript/issues"
   },
-  "homepage": "https://github.com/LeoCR/scs-react-pdf-ssr#readme",
+  "homepage": "https://github.com/LeoCR/scs-react-pdf-typescript#readme",
   "devDependencies": {
+    "@babel/core": "^7.13.15",
+    "@babel/preset-env": "^7.13.15",
+    "@babel/preset-react": "^7.13.13",
+    "@svgr/webpack": "^5.5.0",
     "@types/express": "^4.17.11",
+    "@types/jsonwebtoken": "^8.5.1",
     "@types/node": "^14.14.37",
-    "@types/react": "^17.0.3",
-    "@types/react-dom": "^17.0.3",
-    "@types/react-router-dom": "^5.1.7",
+    "babel-loader": "^8.2.2",
+    "css-loader": "^5.2.1",
     "html-loader": "^2.1.2",
     "html-webpack-plugin": "^5.3.1",
+    "style-loader": "^2.0.0",
     "ts-loader": "^8.1.0",
     "typescript": "^4.2.4",
+    "url": "^0.11.0",
     "webpack": "^5.31.2",
     "webpack-cli": "^4.6.0",
     "webpack-node-externals": "^2.5.2"
   },
   "dependencies": {
+    "@types/body-parser": "^1.19.0",
+    "axios": "^0.21.1",
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
     "express": "^4.17.1",
+    "file-loader": "^6.2.0",
+    "jsonwebtoken": "^8.5.1",
     "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "react-dom": "^17.0.2",
+    "react-pdf": "^5.2.0"
   }
 }

@@ -4,7 +4,7 @@ const nodeExternals = require("webpack-node-externals");
 const HtmlWebPackPlugin = require("html-webpack-plugin");
 
 const config = {
-  mode: "development",
+  mode: "production",
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
     new HtmlWebPackPlugin({
@@ -27,18 +27,50 @@ const config = {
           },
         ],
       },
+      {
+        test: /\.(png|jpg|gif|pdf)$/,
+        use: [
+          {
+            loader: "file-loader",
+            options: {
+              name: "[name].[ext]",
+            },
+          },
+        ],
+      },
+      {
+        test: /\.css$/i,
+        use: ["style-loader", "css-loader"],
+      },
+      {
+        test: /\.(js|jsx)$/,
+        exclude: /(node_modules)/,
+        loader: "babel-loader",
+        options: {
+          presets: ["@babel/env", "@babel/preset-react"],
+        },
+      },
+      {
+        test: /\.svg$/,
+        use: ["@svgr/webpack"],
+      },
     ],
   },
   resolve: {
-    extensions: [".tsx", ".ts", ".js"],
+    extensions: [".tsx", ".ts", ".js", ".jsx"],
     modules: ["src", "node_modules"],
+  },
+
+  performance: {
+    maxAssetSize: 5000000000,
+    maxEntrypointSize: 5000000000,
   },
 };
 
 const client = Object.assign({}, config, {
   name: "client",
   target: "web",
-  entry: path.resolve(__dirname, "src/client/index.tsx"),
+  entry: path.resolve(__dirname, "src/client/index.js"),
   output: {
     filename: "bundle.js",
     path: path.resolve(__dirname, "build"),
